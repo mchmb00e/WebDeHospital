@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(resources/bgrep.png);
+    background-size: 200px;
+}
+nav {
+    margin: 0px;
+    background:  white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0px 0px 0px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li a hr {
+    opacity: 0;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+nav ul li:hover a hr, nav ul li:hover a p {
+    opacity: 1;
+}
+nav ul li a p {
+    font-family: 'Ubuntu', verdana;
+    font-size: 18px;
+    color: red;
+    opacity: 0.75;
+}
+.logo1 {
+    height: 75px;
+    width: auto;
+    filter: grayscale(1);
+    position: relative;
+    bottom: 15px;
+    margin-right: 50px;
+}
+.logo1:hover {
+    filter: grayscale(0);
+}
+.ambulancia {
+    width: 60%;
+}
+.ambulancia img {
+    height: 75px;
+    width: auto;
+    animation: ambulancia 5s ease-in-out infinite;
+}
+@keyframes ambulancia {
+    0% {
+        position: relative;
+        left: 5%;
+        transform: scaleX(-1);
+    }
+    50% {
+        position: relative;
+        left: 85%;
+        transform: scaleX(-1);
+    }
+    51% {
+        transform: scaleX(1);
+    }
+    100% {
+        position: relative;
+        left: 5%;
+    }
+}
+footer {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer div {
+    width: 50%;
+    padding: 20px;
+}
+.footerNavegation ul li {
+    list-style: none;
+}
+.footerNavegation ul li a {
+    text-decoration: none;
+}
+.footerNavegation ul li a p {
+    color: red;
+    font-family: 'Ubuntu', verdana;
+    text-align: center;
+    opacity: 0.75;
+}
+.footerNavegation ul li:hover a p {
+    opacity: 1;
+    font-weight: bolder;
+}
+footer div img {
+    height: 50px;
+    width: auto;
+}
+.footerLogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footerLogos img, .footerLogos p {
+    margin: 10px;
+}
+.footerLogos p {
+    font-family: 'Ubuntu', cursive;
+    font-size: 24px;
+    color: red;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="table.css">
+    <title>PACIENTE</title>
+</head>
+<body>
+    <h1 id="title">Estimad@ Jhons Campos, adjuntamos sus datos personales<br>Datos de su cita para el día: 14/10/2022.</h1>
+    <div class="divMain">
+        <table class="tablePaciente" align="center">
+            <tr>
+                <td colspan="3"  align="center"><b>DATOS DEL PACIENTE</b></td>
+            </tr>
+            <tr>
+                <td rowspan="6" width="100px"><img src="resources/logooriginal.png"></td>
+                <td colspan="2"><b>Nombre: </b>Miguel Chamorro Vasquez</td>
+            </tr>
+            <tr>
+                <td><b>Edad: </b>17</td>
+                <td><b>RUN: </b>224553951</td>
+            </tr>
+            <tr>
+                <td><b>Nacionalidad: </b>Chilena</td>
+                <td><b>Estado civil: </b>Soltero</td>
+            </tr>
+            <tr>
+                <td><b>Sexo: </b>Masculino</td>
+                <td><b>Previsión: </b>Fonasa</td>
+            </tr>
+            <tr>
+                <td><b>Teléfono: +56 9 </b>33392677</td>
+                <td><b>Paciente crónico: </b>No es crónico</td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Dirección: </b>Rodoviario 8440, Cerro navia, Región Metropolitana.</td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3"  class="yellow"><b>ENFERMEDADES CRÓNICAS</b></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">ASMA</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">ASMA</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">ASMA</td>
+            </tr>
+        </table>
+        <table class="tableAtencion" align="center">
+            <tr>
+                <td colspan="2" align="center"  class="yellow"><b>DATOS DE ATENCIÓN</b></td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Tipo de atención: </b>Urgencias</td>
+            </tr>
+            <tr>
+                <td><b>Doctor/a: </b>Dr. Campos</td>
+                <td><b>Fecha y hora: </b>09/09/2000T22:00</td>
+            </tr>
+        </table>
+    </div>
+    <div class="obs">
+        <h2>OBSERVACIONES</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada purus diam, sed mattis ipsum convallis quis. Morbi vitae risus tristique, interdum eros vitae, faucibus sapien. Nulla nec arcu ultricies ex volutpat pretium in ut urna. Quisque eu libero quis lectus egestas lacinia. Fusce ex urna, efficitur in volutpat dapibus, lacinia a ligula. Donec quis blandit turpis. Ut a urna imperdiet mi ornare consequat nec eu sapien. Maecenas id erat condimentum, aliquam nisl non, consectetur massa. Morbi accumsan blandit metus. Sed cursus neque in neque lacinia, sed pharetra lacus posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam fermentum dictum dolor non luctus. Ut vitae tortor quis metus ornare pellentesque sed a nisl.
+        </p>
+    </div>
+    <div class="buttons">
+        <button class="buttonPrintin" onclick="printin()">IMPRIMIR</button>
+        <button class="buttonPrintin" onclick="printinPaciente()">IMPRIMIR<br>Solo paciente</button>
+        <button class="buttonPrintin" onclick="printinAtencion()">IMPRIMIR<br>Solo atención</button>
+        <button class="buttonPrintin" onclick="printinObservacion()">IMPRIMIR<br>Solo observación</button>
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>

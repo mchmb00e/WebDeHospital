@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ATENCIÓN MHOSPITAL</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="atencion.css"> <!-- MIGUEL CHAMORRO, JHONS CAMPOS 4C -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html"><p>INICIO</p><hr></a></li>
+                <li><a href="atencion.html"><p>ATENCIÓN</p><hr></a></li>
+            </ul>
+            <div class="ambulancia">
+                <img src="resources/ambulancia.png">
+            </div>
+            <img class="logo1" src="resources/urgencias.png">
+        </nav>
+        <main>
+            <div class="title1">
+                <h1><img src="resources/logooriginal.png">ATENCIÓN MIGUELITO HOSPITAL</h1>
+            </div>
+            <article>
+                <form method="post" action="atencion.php">
+                    <fieldset class="fieldset1">
+                        <legend>DATOS DEL PACIENTE</legend>
+                        <label for="nombre">
+                            <b>Nombre:</b>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre...">
+                        </label>
+                        <label for="paterno">
+                            <b>Apellido paterno:</b>
+                            <input type="text" name="paterno" id="paterno" placeholder="Apellido paterno...">
+                        </label>
+                        <label for="paterno">
+                            <b>Apellido materno:</b>
+                            <input type="text" name="materno" id="materno" placeholder="Apellido materno...">
+                        </label>
+                        <br>
+                        <label for="celular">
+                            <b>Celular</b> <span class="gray">(+56 9)</span><b>:</b>
+                            <input type="number" name="celular" id="celular" min="10000000" max="99999999" placeholder="1234 5678">
+                        </label>
+                        <label for="run">
+                            <b>RUN:</b>
+                            <input type="text" name="run" id="run" placeholder="12345678-9">
+                        </label>
+                        <label for="direccion">
+                            <b>Dirección:</b>
+                            <input type="text" name="direccion" id="direccion" placeholder="Direccion #1234, Comuna, Región.">
+                        </label>
+                        <br>
+                        <label for="edad">
+                            <b>Edad:</b>
+                            <input type="number" name="edad" min="1" max="99">
+                        </label>
+                        <label for="nacionalidad">
+                            <b>Nacionalidad:</b>
+                            <select name="nacionalidad" id="nacionalidad">
+                                <option value="Chilena">Chilena</option>
+                                <option value="Peruana">Peruana</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Haitiana">Haitiana</option>
+                                <option value="Boliviana">Boliviana</option>
+                                <option value="Colombiana">Colombiana</option>
+                                <option value="Venezolana">Venezolana</option>
+                                <option value="Brasileña">Brasileña</option>
+                            </select>
+                        </label>
+                        <label for="estado">
+                            <b>Estado civil:</b>
+                            <select name="estado" id="estado">
+                                <option value="Soltero">Soltero</option>
+                                <option value="Divorciado">Divorciado</option>
+                                <option value="Viudo">Viudo</option>
+                                <option value="Casado">Casado</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label for="sexo">
+                            <b>Sexo:</b><br>
+                            <input type="radio" name="sexo" id="sexo" value="Masculino">Masculino.
+                            <br>
+                            <input type="radio" name="sexo" id="sexo" value="Femenino">Femenino.
+                        </label>
+                        <label for="prevision">
+                            <b>Previsión:</b><br>
+                            <input type="radio" name="prevision" id="prevision" value="Fonasa">Fonasa.
+                            <br>
+                            <input type="radio" name="prevision" id="prevision" value="Isapre">Isapre.
+                        </label>
+                        <label for="cronico">
+                            <b>Paciente crónico:</b><br>
+                            <input type="radio" name="cronico" id="cronico" value="No crónico">No crónico.
+                            <br>
+                            <input type="radio" name="cronico" id="cronico" value="Si es crónico">Si es crónico.
+                        </label>
+                    </fieldset>
+                    <fieldset class="fieldset2">
+                        <legend>DATOS DE ATENCIÓN</legend>
+                        <div>
+                            <label class="enfermedades" for="enfermedades">
+                                <b>Enfermedades crónicas:</b><br>
+                                <input type="checkbox" name="enfermedades[]" value="Alzheimer" checked>Alzheimer<br>
+                                <input type="checkbox" name="enfermedades[]" value="Astritis" checked>Astritis<br>
+                                <input type="checkbox" name="enfermedades[]" value="Cáncer" checked>Cáncer<br>
+                                <input type="checkbox" name="enfermedades[]" value="Asma">Asma<br>
+                                <input type="checkbox" name="enfermedades[]" value="EPOC">EPOC<br>
+                                <input type="checkbox" name="enfermedades[]" value="Fibrosis quística">Fibrosis quística<br>
+                                <input type="checkbox" name="enfermedades[]" value="Diabetes">Diabetes<br>
+                                <input type="checkbox" name="enfermedades[]" value="Epilepsia">Epilepsia<br>
+                                <input type="checkbox" name="enfermedades[]" value="VIH">VIH<br>
+                                <input type="checkbox" name="enfermedades[]" value="Parkinson">Parkinson<br>
+                            </label>
+                        </div>
+                        <div class="leftFieldset2">
+                            <label for="atencion">
+                                <b>Tipo de atención:</b><br>
+                                <select name="atencion" id="atencion">
+                                    <option value="Urgencia">Urgencia</option>
+                                    <option value="Pediatría">Pediatría</option>
+                                    <option value="Dental">Dental</option>
+                                    <option value="Kinesiología">Kinesiología</option>
+                                    <option value="Traumatología">Traumatología</option>
+                                </select>
+                            </label>
+                            <label for="doctor">
+                                <b>Doctor:</b><br>
+                                <select name="doctor" id="doctor">
+                                    <option value="Dr. Chamorro">Dr. Chamorro</option>
+                                    <option value="Dr. Campos">Dr. Campos</option>
+                                    <option value="Dr. Pincheira">Dr. Pincheira</option>
+                                    <option value="Dr. Rojas">Dr. Rojas</option> 
+                                    <option value="Dr. Tapia">Dr. Tapia</option>
+                                    <option value="Dr. Morales">Dr. Morales</option>
+                                    <option value="Dra. Polo">Dra. Polo</option>
+                                    <option value="Dr. Simi">Dr. Simi</option>
+                                    <option value="Dr. Pepe">Dr. Pepe</option>
+                                    <option value="Dr. Tilín">Dr. Tilín</option>
+                                </select>
+                            </label>
+                            <label for="fechahora">
+                                <b>Fecha y hora:</b><br>
+                                <input type="datetime-local" id="fechahora" name="fechahora">
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldsetObs">
+                        <legend>OBSERVACIONES</legend>
+                        <textarea maxlength="500" class="textarea" cols="50" rows="10" name="observacion"></textarea>
+                        
+                        <div class="submit">
+                            <button type="submit"><span class="material-symbols-outlined">send</span></button>
+                            <button type="reset"><span class="material-symbols-outlined">restart_alt</span></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <div class="footerNavegation">
+                <ul>
+                    <li><a href="index.html"><p>INICIO</p></a></li>
+                    <li><a href="atencion.html"><p>ATENCIÓN</p></a></li>
+                </ul>
+            </div>
+            <div class="footerLogos">
+                <a href="https://www.duoc.cl/" target="_blank"><img src="resources/logoduoc.png"></a>
+                <a href="https://liceoandes.duoc.cl/" target="_blank"><img src="resources/lpalogo.jfif"></a>
+                <p>Jhons Campos y Miguel Chamorro, 4C 2022.</p>
+            </div>
+        </footer>
+    </body>
+</html>

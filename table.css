@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300&display=swap');
+
+.divMain table {
+    width: 80%;
+    height: auto;
+    border: black solid 2px;
+    position: relative;
+}
+.tablePaciente td img:hover {
+    transition: 2s;
+    transform: rotate(360deg);
+}
+.divMain table td {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Ubuntu', comic sans;
+    transition: 1s;
+    background-color: white;
+    padding: 10px;
+}
+.divMain table td:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+.divMain {
+    display: flex;
+    flex-direction: column;
+}
+#title {
+    color: 'Anton', verdana;
+    text-align: center;
+}
+.tableAtencion {
+    margin-top: 50px;
+}
+.obs {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+.obs h2 {
+    font-family: 'Anton', fantasy;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.obs p {
+    font-family: 'Ubuntu', Arial;
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+}
+.buttonPrintin {
+    background-color: yellow;
+    width: 150px;
+    height: 75px;
+    border-radius: 20px;
+    box-shadow: inset -1px 3px 8px 5px orange, 2px 5px 16px 0px orange, 5px 5px 15px 5px rgba(0,0,0,0);
+    font-weight: bolder;
+}
+.buttonPrintin:hover {
+    background-color: white;
+}
+.buttons {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
